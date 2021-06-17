@@ -32,7 +32,7 @@ public class NavBar extends JPanel implements KeyListener{
 		
 		this.page = 0;
 		
-		setSize(1100, 600);
+		setSize(951, 600);
 		setLayout(null);
 		
 		JPanel logoPanel = new JPanel();
@@ -51,7 +51,7 @@ public class NavBar extends JPanel implements KeyListener{
 		
 		JPanel searchPanel = new JPanel();
 		searchPanel.setBackground(Color.WHITE);
-		searchPanel.setBounds(79, 0, 567, 70);
+		searchPanel.setBounds(79, 0, 418, 70);
 		add(searchPanel);
 		searchPanel.setLayout(new FlowLayout(FlowLayout.LEFT, 10, 20));
 		
@@ -68,7 +68,7 @@ public class NavBar extends JPanel implements KeyListener{
 		
 		homePanel = new JPanel();
 		homePanel.setBackground(Color.WHITE);
-		homePanel.setBounds(644, 0, 433, 70);
+		homePanel.setBounds(493, 0, 458, 70);
 		add(homePanel);
         homePanel.setLayout(new FlowLayout(FlowLayout.RIGHT, 0, 20));
 		
@@ -107,8 +107,8 @@ public class NavBar extends JPanel implements KeyListener{
 		typeButton.setBorderPainted(false);
 		homePanel.add(typeButton);
 		
-//		menuBar = new JMenuBar();
-//		menuBar.setVisible(false);
+		menuBar = new JMenuBar();
+		menuBar.setVisible(false);
 
 		homePanel.add(menuBar);
 			

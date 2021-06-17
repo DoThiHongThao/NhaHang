@@ -3,23 +3,21 @@ package Manager;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.SystemColor;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
-import javax.swing.JButton;
-import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
-import javax.swing.JTextField;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.border.LineBorder;
 import javax.swing.table.DefaultTableModel;
-
+import Manager.NavBar;
 
 public class FoodManager extends NavBar{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	private String column[] = new String[] {
 			"ID Food", "Name", "Price", "ID Type"
 		};
@@ -30,7 +28,6 @@ public class FoodManager extends NavBar{
     private JTable table;
   
 	public FoodManager() {
-		
 		JPanel panel = new JPanel();
 		panel.setBackground(Color.WHITE);
 		panel.setBounds(0, 68, 947, 530);
@@ -93,4 +90,7 @@ public class FoodManager extends NavBar{
 			));
 	}
 	
+	public void main(String[] argv) {
+		FoodManager food = new FoodManager();
+	}
 }

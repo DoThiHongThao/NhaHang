@@ -32,7 +32,7 @@ public class StaffManager extends NavBar{
 		
 		JPanel panel_1 = new JPanel();
 		panel_1.setBackground(SystemColor.control);
-		panel_1.setBounds(10, 0, 1079, 540);
+		panel_1.setBounds(10, 0, 937, 540);
 		panel.add(panel_1);
 		panel_1.setLayout(null);
 		
@@ -42,7 +42,7 @@ public class StaffManager extends NavBar{
 		panel_1.add(lblNewLabel);
 		
 		JPanel panel_2 = new JPanel();
-		panel_2.setBounds(10, 65, 1059, 485);
+		panel_2.setBounds(10, 65, 928, 485);
 		panel_1.add(panel_2);
 		panel_2.setLayout(null);
 		
